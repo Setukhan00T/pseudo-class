@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Position</title>
+    <style>
+      h3::after {
+        content: ".pdf";
+        color: red;
+        background-color: yellow;
+      }
+      h3::before {
+        content: "start.";
+        color: red;
+        background-color: yellow;
+      }
+      p::first-letter {
+        font-size: 2em;
+      }
+      p::first-line {
+        background-color: turquoise;
+      }
+      ::selection {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>CSS Positions</h3>
+    <ol>
+      <!-- flow related -->
+      <li>Static</li>
+      <li>Relative: nijer jayga charbe na je khanei ja</li>
+      <li>
+        Absolute: parent thakle tar onojai jayga ney ar parent na thak le mol
+        web er onojai jay ga ney
+      </li>
+      <!-- scroll related -->
+      <li>Fixed</li>
+      <li>Sticky: jay atke takbe scroll korleo lorbe na</li>
+    </ol>
+
+    <div class="swim-container">
+      <!-- div.box*3>img   (shortcut) -->
+      <div class="box"><img src="" alt="" /></div>
+      <div class="box"><img src="" alt="" /></div>
+      <div class="box"><img src="" alt="" /></div>
+    </div>
+
+    <!-- h3*3{heading -$} (shortcut)  -->
+    <h3>heading -1</h3>
+    <h3>heading -2</h3>
+    <h3>heading -3</h3>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis earum fuga
+      explicabo illo consequatur at libero unde quo delectus similique?
+    </p>
+  </body>
+</html>
